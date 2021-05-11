@@ -69,6 +69,7 @@ class Main(QDialog):
             time.sleep(tick)
             global CHECKED
             CHECKED += 1
+            print('Checked: ', CHECKED)
             self.numChecked.setText(str(CHECKED))
             self.numChecked.repaint()
             self.dr.unchecked -= 1
